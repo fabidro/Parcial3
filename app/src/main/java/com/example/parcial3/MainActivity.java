@@ -30,42 +30,42 @@ public class MainActivity extends AppCompatActivity {
         sm = (SensorManager) getSystemService(SENSOR_SERVICE);//declaramos el sensor manager
         temperatura = sm.getSensorList(Sensor.TYPE_AMBIENT_TEMPERATURE);
         if (temperatura.size() > 0) { // vamos a ver si hay algun sensor "por lo menos hay uno
-            SensorTemperatura.setText("Si hay");
+            SensorTemperatura.setText("Si existe");
         } else {
-            SensorTemperatura.setText("No hay");
+            SensorTemperatura.setText("No existe");
         }
 
 
 
         Luz = sm.getSensorList(Sensor.TYPE_LIGHT);
         if (Luz.size() > 0) { // vamos a ver si hay algun sensor "por lo menos hay uno
-            SensorLuz.setText("Si tiene");
+            SensorLuz.setText("Si existe");
         } else {
-            SensorLuz.setText("No tiene");
+            SensorLuz.setText("No existe");
         }
 
 
         Acelerometro = sm.getSensorList(Sensor.TYPE_ACCELEROMETER);
         if (Acelerometro.size() > 0) { // vamos a ver si hay algun sensor "por lo menos hay uno
-            SensorAcelerometro.setText("Si tiene");
+            SensorAcelerometro.setText("Si existe");
         } else {
-            SensorAcelerometro.setText("No Tiene");
+            SensorAcelerometro.setText("No existe");
         }
 
 
         Orientacion = sm.getSensorList(Sensor.TYPE_ORIENTATION);
         if (Orientacion.size() > 0) { // vamos a ver si hay algun sensor "por lo menos hay uno
-            SensorOrientacion.setText("Si hay");
+            SensorOrientacion.setText("Si existe");
         } else {
-            SensorOrientacion.setText("No hay");
+            SensorOrientacion.setText("No existe");
         }
 
-        
+
         posicion = sm.getSensorList(Sensor.TYPE_ROTATION_VECTOR);
         if (posicion.size() > 0) { // vamos a ver si hay algun sensor "por lo menos hay uno
-            SensorPosicion.setText("Si hay");
+            SensorPosicion.setText("Si existe");
         } else {
-            SensorPosicion.setText("No hay");
+            SensorPosicion.setText("No existe");
         }
     }
 }
